@@ -6,4 +6,7 @@ this scrapper to extract data to better analyze problems so that we can solve fe
 To learn about scrapy you can [Click here](https://docs.scrapy.org/en/latest/intro/overview.html)
 
 To use this scrapper just clone this repo and install the requirement.txt file  
-On the command shell type ```scrapy crawl cf -O problmes.json``` or problems.csv for csv file
+On the command shell type ```scrapy crawl cf -O problmes.json``` for json file or ```problems.csv``` for csv file
+
+> [!IMPORTANT]
+> You can get blocked by Codeforces so better to use rotating-proxy in each request, you can add it in your own, simple put line ```meta={"proxy":"protocol://username:password@domainname:PORT"}``` in file spiders/cf.py line 27.
