@@ -24,4 +24,4 @@ class CfSpider(scrapy.Spider):
         next_page_url = "https://codeforces.com" + page.css('li:last-child a ::attr(href)').get()
         print("#####################" + next_page_url + "######################")
         if next_page_url is not None:
-            yield response.follow(next_page_url, callback=self.parse, meta={"proxy":"http://test1234567890-rotate:test1234567890@p.webshare.io:80/"})
+            yield response.follow(next_page_url, callback=self.parse)
