@@ -10,6 +10,7 @@ This is a Scrapy-based web scraper specifically designed for extracting detailed
     - Name
     - Number of people who have solved the problem
     - Problem rating
+    - Tags
 - Rotating proxy support (You need to provide your own URL, sign up [here](https://proxy2.webshare.io/) for a dashboard)
 
 > [!NOTE]
