@@ -14,7 +14,8 @@ class CodeforcesItem(scrapy.Item):
 
 class CodeforcesProblemSet(scrapy.Item):
     name = scrapy.Field()
+    url = scrapy.Field()
     problem_rating = scrapy.Field()
     solved_by = scrapy.Field()
-    url = scrapy.Field()
+    tags = scrapy.Field()
 

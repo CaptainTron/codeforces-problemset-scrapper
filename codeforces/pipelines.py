@@ -17,9 +17,30 @@ class CodeForcesPipelines:
     def process_item(self, item, spider):
         adapter = ItemAdapter(item)
 
-        availability_string = adapter.get('name')[0]
-        if availability_string is not None:
-            adapter['name'] = availability_string.strip()
+        name = adapter.get('name')[0]
+        if name is None:
+            return None
+        
+        
+        if name is not None:
+            adapter['name'] = name.strip()
+        
+        
+        url = adapter.get('url')[0]
+        if url is not None:
+            adapter['url'] = url.strip()
+            
+            
+        problem_rating = adapter.get('problem_rating')[0]
+        if problem_rating is not None:
+            adapter['problem_rating'] = problem_rating.strip()
+        
+        # 
+        solved_by = adapter.get('solved_by')[0]
+        if solved_by is not None:
+            adapter['solved_by'] = solved_by.strip()
+            
+            
         return item
 
 

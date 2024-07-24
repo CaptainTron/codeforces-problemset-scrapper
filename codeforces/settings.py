@@ -14,7 +14,7 @@ NEWSPIDER_MODULE = "codeforces.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "codeforces (+http://www.yourdomain.com)"
+# USER_AGENT = "codeforces (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -100,9 +100,9 @@ TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 
 
-ROTATING_PROXY_LIST = [
-    '217.25.215.194:4153',
-    '143.255.249.74:7497',
-    '139.159.138.30:7890',
-    '124.106.234.215:5678',
-]
+# ROTATING_PROXY_LIST = [
+#     '217.25.215.194:4153',
+#     '143.255.249.74:7497',
+#     '139.159.138.30:7890',
+#     '124.106.234.215:5678',
+# ]
