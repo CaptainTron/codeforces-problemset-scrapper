@@ -3,7 +3,7 @@ This is a Scrapy-based web scraper specifically designed for extracting detailed
 
 
 
-### Below are some insights from the data  
+### Insights from the data  
 Following topics are present (tags) in the problemset with number of problems.
 ```
 {
